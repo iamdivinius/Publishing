@@ -1,1 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Client Intake Form | Divinius Publishing</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body style="background-color: #0b0b0b; color: #ffffff; font-family: 'Georgia', serif;">
+  <header style="text-align: center; padding: 3rem 1rem;">
+    <h1 style="color: #ffd700; font-size: 2.5rem;">Client Intake Form</h1>
+    <p style="font-style: italic; color: #ccc;">Tell us about your vision so we can support your publishing journey.</p>
+  </header>
+
+  <main style="max-width: 900px; margin: auto; padding: 2rem;">
+    <form id="contactForm">
+      <label for="name">Full Name:</label><br />
+      <input type="text" id="name" placeholder="Your name" required /><br /><br />
+
+      <label for="email">Email Address:</label><br />
+      <input type="email" id="email" placeholder="you@example.com" required /><br /><br />
+
+      <label for="genre">Book Genre:</label><br />
+      <input type="text" id="genre" placeholder="e.g. Memoir, Self-help, Fantasy" required /><br /><br />
+
+      <label for="wordcount">Estimated Word Count:</label><br />
+      <input type="text" id="wordcount" placeholder="e.g. 40,000 words" required /><br /><br />
+
+      <label for="timeline">Ideal Publishing Timeline:</label><br />
+      <input type="text" id="timeline" placeholder="e.g. 3-6 months" required /><br /><br />
+
+      <label for="budget">Estimated Budget:</label><br />
+      <input type="text" id="budget" placeholder="e.g. $1,500 - $3,000" required /><br /><br />
+
+      <label for="message">Tell us about your book:</label><br />
+      <textarea id="message" placeholder="Share a short summary, your goals, or any questions you have..." required></textarea><br /><br />
+
+      <button type="submit" style="background: linear-gradient(to right, #7f5af0, #ff5dad); color: #fff; padding: 0.75rem 1.5rem; border: none; font-weight: bold; border-radius: 8px; cursor: pointer;">Submit Intake</button>
+    </form>
+
+    <p id="formMessage" style="margin-top: 1.5rem;"></p>
+  </main>
+
+  <footer style="background-color: #111; color: #fff; text-align: center; padding: 2rem; margin-top: 4rem;">
+    <p>&copy; 2025 Divinius Publishing. All rights reserved.</p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
 
