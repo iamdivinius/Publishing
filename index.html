@@ -1,7 +1,6 @@
 from pathlib import Path
 import zipfile
 
-html_content = """
 <!-- 🌙 Hero Section -->
 <section style="background: linear-gradient(black, #300030); color: white; text-align: center; padding: 60px 20px;">
   <h1 style="font-size: 3em; font-family: 'Georgia', serif;">Divinius Publishing</h1>
@@ -74,16 +73,5 @@ html_content = """
 </section>
 """
 
-# Define file paths
-html_path = Path("/mnt/data/index.html")
-zip_path = Path("/mnt/data/divinius_site_bundle.zip")
 
-# Save the HTML file
-html_path.write_text(html_content, encoding="utf-8")
-
-# Zip the file
-with zipfile.ZipFile(zip_path, "w") as zipf:
-    zipf.write(html_path, arcname="index.html")
-
-zip_path.name  # Show the filename for download link
 
