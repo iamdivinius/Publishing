@@ -1,34 +1,61 @@
-from pathlib import Path
-import zipfile
+<!-- 🧭 Sticky Navigation Bar -->
+<style>
+  .sticky-nav {
+    position: sticky;
+    top: 0;
+    background-color: #000;
+    padding: 10px 0;
+    text-align: center;
+    z-index: 1000;
+  }
+  .sticky-nav a {
+    margin: 0 15px;
+    text-decoration: none;
+    color: #fff;
+    font-weight: bold;
+    transition: color 0.3s ease;
+  }
+  .sticky-nav a:hover {
+    color: #ff6bd6;
+  }
+</style>
+
+<nav class="sticky-nav">
+  <a href="#">Home</a>
+  <a href="#about">Our Mission</a>
+  <a href="#services">Services</a>
+  <a href="#contact">Contact</a>
+</nav>
 
 <!-- 🌙 Hero Section -->
 <section style="background: linear-gradient(black, #300030); color: white; text-align: center; padding: 60px 20px;">
   <h1 style="font-size: 3em; font-family: 'Georgia', serif;">Divinius Publishing</h1>
   <p style="font-size: 1.2em; font-style: italic;">A Sacred Space for Authors with Purpose, Power & Divine Inspiration</p>
-  <a href="#contact" style="background-color: #ff6bd6; padding: 12px 24px; border-radius: 30px; color: black; text-decoration: none; font-weight: bold; display: inline-block; margin-top: 20px;">✨ Schedule Your Discovery Call ✨</a>
+  <a href="#contact" style="background-color: #ff6bd6; padding: 12px 24px; border-radius: 30px; color: black; text-decoration: none; font-weight: bold; display: inline-block; margin-top: 20px;">✨ Get Started Today ✨</a>
 </section>
 
 <!-- 💫 Mission Section -->
-<section style="background: linear-gradient(#6a00b3, #ff55a5); color: white; padding: 50px 20px; text-align: center;">
-  <h2 style="font-size: 2.2em;">You Were Chosen to Share Your Story</h2>
-  <p style="max-width: 700px; margin: 0 auto; font-size: 1.1em;">At Divinius Publishing, we help soul-led authors birth their books into the world with grace, intention, and divine alignment. Whether you're beginning with an idea or ready to publish your manuscript, we walk with you — every step of the way.</p>
+<section id="about" style="background: linear-gradient(#6a00b3, #ff55a5); color: white; padding: 50px 20px; text-align: center;">
+  <h2 style="font-size: 2.2em;">Welcome to Divinius Publishing</h2>
+  <p style="max-width: 700px; margin: 0 auto; font-size: 1.1em;">At Divinius, we believe every soul has a story worth sharing—and the power to inspire, heal, and uplift. Whether you're an aspiring author, thought leader, or heart-led visionary, we’re here to guide you from idea to beautifully published book. We combine soulful support with smart tools to make your publishing journey feel aligned, empowering, and deeply meaningful.</p>
 </section>
 
 <!-- 🌸 Services Section -->
-<section style="background: black; color: white; padding: 60px 20px;">
-  <h2 style="text-align: center; font-size: 2em; margin-bottom: 40px;">✨ Our Signature Publishing Packages ✨</h2>
+<section id="services" style="background: black; color: white; padding: 60px 20px;">
+  <h2 style="text-align: center; font-size: 2em; margin-bottom: 20px;">✨ Our Signature Publishing Packages ✨</h2>
+  <p style="max-width: 700px; margin: 0 auto; font-size: 1.1em; text-align: center;">At Divinius Publishing, we make it easy for purpose-driven authors to bring their books to life—beautifully, affordably, and with heart. Whether you’re just starting or ready to rise, we have a package that meets you where you are.</p>
 
-  <div style="display: flex; flex-wrap: wrap; justify-content: space-around; gap: 40px;">
-    <div style="flex: 1; min-width: 250px; max-width: 300px; background: #1a1a1a; padding: 20px; border-radius: 12px;">
-      <h3>🌟 Starter Package: Ignite</h3>
+  <div style="display: flex; flex-wrap: wrap; justify-content: center; gap: 40px; margin-top: 40px;">
+    <div style="flex: 1; min-width: 260px; max-width: 300px; background: #1a1a1a; padding: 20px; border-radius: 12px;">
+      <h3 style="color: #ff6bd6;">🌟 Starter Package: Ignite</h3>
       <ul>
         <li>Manuscript Review & Feedback</li>
         <li>Basic Editing & Formatting</li>
         <li>ISBN + Author Rights Guidance</li>
       </ul>
     </div>
-    <div style="flex: 1; min-width: 250px; max-width: 300px; background: #1a1a1a; padding: 20px; border-radius: 12px;">
-      <h3>🌙 Growth Package: Illuminate</h3>
+    <div style="flex: 1; min-width: 260px; max-width: 300px; background: #1a1a1a; padding: 20px; border-radius: 12px;">
+      <h3 style="color: #00ffe1;">🌙 Growth Package: Illuminate</h3>
       <ul>
         <li>Everything in Ignite</li>
         <li>Professional Editing</li>
@@ -36,8 +63,8 @@ import zipfile
         <li>Light Launch Support</li>
       </ul>
     </div>
-    <div style="flex: 1; min-width: 250px; max-width: 300px; background: #1a1a1a; padding: 20px; border-radius: 12px;">
-      <h3>🌌 Legacy Package: Ascend</h3>
+    <div style="flex: 1; min-width: 260px; max-width: 300px; background: #1a1a1a; padding: 20px; border-radius: 12px;">
+      <h3 style="color: #ffb6f9;">🌌 Legacy Package: Ascend</h3>
       <ul>
         <li>All-in-One Full-Service Publishing</li>
         <li>Personal Publishing Coach</li>
@@ -50,28 +77,46 @@ import zipfile
   <p style="text-align: center; margin-top: 40px; font-size: 1.1em;">✨ Add-On Services Available: Ghostwriting, Audiobook Production, Custom Journals & more ✨</p>
 
   <div style="text-align: center; margin-top: 30px;">
-    <a href="#contact" style="background-color: #00ffe1; padding: 12px 24px; border-radius: 30px; color: black; text-decoration: none; font-weight: bold;">📚 Contact Us to Explore Your Path</a>
+    <a href="#contact" style="background-color: #ffffff; color: black; padding: 12px 24px; border-radius: 30px; text-decoration: none; font-weight: bold;">📧 Contact Us Today</a>
   </div>
 </section>
 
 <!-- 🌠 Why Choose Us Section -->
-<section style="background: linear-gradient(#000, #111); color: white; padding: 60px 20px; text-align: center;">
-  <h2>Why Choose Divinius?</h2>
-  <ul style="list-style: none; padding: 0; font-size: 1.1em;">
-    <li>💖 We care about your message as much as you do.</li>
-    <li>🪶 We're spiritually aligned and purpose-driven.</li>
-    <li>🧘🏽‍♀️ We offer a sacred, supportive container for your story.</li>
-    <li>🛠️ We use intuitive tools and professional systems that support your success — even on a budget.</li>
+<section style="background: #6de7dd; color: black; text-align: center; padding: 50px 20px;">
+  <h2>✨ Why Choose Divinius Publishing?</h2>
+  <p style="max-width: 800px; margin: 0 auto; font-size: 1.1em;">Because we’re more than just a publishing service—we’re your creative ally, your guide, and your biggest believer. At Divinius, we blend intuitive support with smart strategy, helping you publish a book that’s not only beautiful, but meaningful, marketable, and aligned with your purpose.</p>
+
+  <ul style="list-style: none; padding: 0; font-size: 1.1em; margin-top: 30px;">
+    <li>✅ Soul-Aligned Approach – We honor your voice, your message, and your mission. No cookie-cutter publishing here.</li>
+    <li>✅ Done-for-You Simplicity – From formatting to launch prep, we take care of the details so you can focus on your story.</li>
+    <li>✅ Affordable, Flexible Packages – Designed with new authors in mind, our services are high-quality without the high price tag.</li>
+    <li>✅ Built-in Growth Tools – From lead magnets to launch support, we help you grow your platform while building your legacy.</li>
+    <li>✅ Real Connection, Real Support – You’re not just a client. You’re a co-creator, and we’re with you every step of the way.</li>
   </ul>
+
+  <p style="margin-top: 20px; font-weight: bold;">You have something powerful to say. Let’s make sure the world hears it.</p>
+</section>
+
+<!-- ✨ Final CTA Section -->
+<section style="background: #6de7dd; color: black; text-align: center; padding: 50px 20px;">
+  <h2>👩🏽‍💻 Your Legacy Starts Here</h2>
+  <p>Ready to publish with purpose, magic, and impact? Let’s bring your vision to life.</p>
+  <p>👉 <strong>Get Started Today</strong><br>📬 Or Schedule a Free Discovery Call</p>
 </section>
 
 <!-- 📞 Footer Section -->
-<section id="contact" style="background: #6de7dd; color: black; text-align: center; padding: 50px 20px;">
-  <h2>Let’s Co-Create Your Story!</h2>
-  <p>Ready to bring your vision to life? Contact us to begin your divine publishing journey.</p>
-  <a href="mailto:diviniuspublishing@gmail.com" style="background-color: black; color: white; padding: 12px 24px; border-radius: 30px; text-decoration: none; font-weight: bold;">📧 Send Us a Message</a>
+<section id="contact" style="background: black; color: white; text-align: center; padding: 40px 20px;">
+  <a href="#" style="background-color: #ff6bd6; padding: 12px 24px; border-radius: 30px; color: black; text-decoration: none; font-weight: bold;">✨ Get Started Today ✨</a>
 </section>
-"""
 
-
-
+<!-- Navigation Footer -->
+<footer style="background: #f7f0e8; color: black; text-align: center; padding: 20px 10px;">
+  <nav>
+    <a href="#" style="margin: 0 10px; text-decoration: none; color: black; font-weight: bold;">Home</a>
+    <a href="#about" style="margin: 0 10px; text-decoration: none; color: black; font-weight: bold;">Our Mission</a>
+    <a href="#about" style="margin: 0 10px; text-decoration: none; color: black; font-weight: bold;">About Us</a>
+    <a href="#services" style="margin: 0 10px; text-decoration: none; color: black; font-weight: bold;">Services</a>
+    <a href="#contact" style="margin: 0 10px; text-decoration: none; color: black; font-weight: bold;">Contact Us</a>
+    <a href="#" style="margin: 0 10px; text-decoration: none; color: black; font-weight: bold;">Terms and Conditions</a>
+  </nav>
+</footer>
